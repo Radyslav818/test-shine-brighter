@@ -7,13 +7,13 @@
     @apply font-[Yantramanav] scroll-smooth;
   }
   h1 {
-    @apply font-black not-italic text-[150px] leading-[122px];
+    @apply font-black not-italic leading-[122px];
   }
   h2 {
     @apply font-bold not-italic text-[60px] leading-[50px];
   }
   h3 {
-    @apply font-bold not-italic text-[35px] leading-[39px];
+    @apply font-bold not-italic leading-[39px];
   }
   p {
     @apply font-normal not-italic text-[25px] leading-[35px];
