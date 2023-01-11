@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-[Yantramanav] scroll-smooth;
+  }
+  h1 {
+    @apply font-black not-italic text-[150px] leading-[122px];
+  }
+  h2 {
+    @apply font-bold not-italic text-[60px] leading-[50px];
+  }
+  h3 {
+    @apply font-bold not-italic text-[35px] leading-[39px];
+  }
+  p {
+    @apply font-normal not-italic text-[25px] leading-[35px];
+  }
+  .title {
+    @apply font-bold not-italic text-[28px] leading-[34px];
+  }
+  .body {
+    @apply font-normal not-italic text-[18px] leading-[25px];
+  }
+  section {
+    @apply min-h-screen;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.avatar {
+  flex: 0 0 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: white;
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
